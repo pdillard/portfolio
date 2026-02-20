@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 1em;
+    background-color: rgb(78, 130, 243);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    color: white;
+    align-items: center;
+}
+
+.name {
+    text-align: left;
+    padding: 10px 15px;
+}
+
+.nav-bar {
+    text-align: right;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
