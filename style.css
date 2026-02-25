@@ -2,11 +2,21 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #EDF2F4;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
 }
 
 header {
     padding: 1em;
-    background-color: rgb(78, 130, 243);
+    background-color: #2B2D42;
 }
 
 .menu {
@@ -27,7 +37,46 @@ header {
 }
 
 .nav-bar a {
+    position: relative;
     text-decoration: none;
     color: white;
     padding: 10px 15px;
+    cursor: pointer;
+}
+
+.nav-bar a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-bar a:hover::after {
+    width: 100%;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.introduction {
+    width: 500px;
+}
+
+.introduction h1 {
+    margin: 10px;
+    font-weight: 100;
+}
+
+.introduction h3 {
+    margin: 0;
+    font-weight: 20;
 }
